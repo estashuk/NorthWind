@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – приложение ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/css/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/myJS.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            @*@{ Html.RenderAction("Summary", "Cart");}*@
+            <div class="header-image">
+                <img src="../images/Northwind.jpg" alt="Nort Wind"/>
+            </div>
+            <h1>North Wind</h1>
+        </header>
+        <div id="categories">
+            @{Html.RenderAction("Menu", "Nav");}
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year – All rights reserved. North Wind</p>
+        </footer>
+    </div>
+</body>
+</html>

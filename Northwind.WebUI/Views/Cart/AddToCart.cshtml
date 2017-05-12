@@ -1,0 +1,47 @@
+﻿@model Domain.Entities.Cart
+
+<div id="cartStateDet">
+    <table width="90%" align="center">
+        <thead>
+        <tr>
+            <td align="center">Quantity</td>
+            <td align="left">Item</td>
+            <td align="right">Price</td>
+            <td align="right">Subtotal</td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var line in Model.Lines)
+        {
+            <tr>
+                <td align="center">@line.Quantity</td>
+                <td align="left">@line.Product.ProductName</td>
+                <td align="right">@line.Product.UnitPrice.Value.ToString("c")</td>
+                <td align="right">@((line.Quantity*line.Product.UnitPrice.Value).ToString("c"))</td>
+                <td>
+                    @*@using (Html.BeginForm("RemoveFromCart", "Cart"))
+                            {
+                                        @Html.Hidden("ProductId", line.Product.ProductId)
+                                        @Html.HiddenFor(x => x.ReturnUrl)
+                                        <input class="actionButtons" type="Submit" value="Remove" />
+                                    }*@
+                </td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" align="right">Total:</td>
+            <td align="right">
+                @Model.ComputeTotalValue().ToString("c")
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    @*@using (Html.BeginForm("Checkout", "Cart"))
+        {
+            <input class="ui-button" type="button" value="Buy" style="float: left;"/>
+        }*@
+        <input class="ui-button" type="button" value="Buy" onclick="location.href='@Url.Action("Checkout", "Cart")'" />
+        <input class="ui-button" type="button" value="Continue " onclick="CloseCartWindow()" />    
+</div>

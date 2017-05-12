@@ -1,0 +1,184 @@
+﻿BODY
+{
+    background-image: url(../images/background-sky.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #353535;
+
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
+}
+DIV {
+    display: block;
+}
+DIV.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;   
+}
+
+.product {
+	display: block;
+	border: 1px solid lightblue;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 300px;
+}
+
+.products {
+	list-style: none;
+	margin: 0 -20px 0 0;
+	padding: 0;
+}
+
+.product-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+    display: block;
+	border: 1px solid lightblue;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 300px;
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 20%;
+	}
+}
+
+HEADER DIV.title, DIV.item H3, DIV.item H4, DIV.pager A
+{
+font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+HEADER DIV.header-image img{
+    height: 3em;
+    float: left;
+    display: block;
+}
+HEADER
+{
+    padding: 20px;
+    background: #fff;
+    border: 1px solid lightblue;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0;
+    color: #727272;
+}
+HEADER DIV.title
+{
+font-size: 2em;
+padding: .6em;
+}
+DIV#content
+{
+border-left: 2px solid grey;
+margin-left: 9em;
+    padding-right: 1em;
+    padding-left: 1em;
+    min-height: 200px;
+}
+DIV#categories {
+    float: left;
+    width: 8em;
+    padding: .3em;
+}
+
+DIV.item
+{
+border-top: 1px dotted grey;
+padding-top: .7em;
+margin-bottom: .7em;
+}
+DIV.item:first-child
+{
+border-top: none;
+padding-top: 0;
+}
+DIV.item H3
+{
+font-size: 1.3em;
+margin: 0 0 .25em 0;
+}
+DIV.item H4
+{
+font-size: 1.1em;
+margin: .4em 0 0 0;
+}
+DIV.pager
+{
+text-align: right;
+border-top: 2px solid silver;
+padding: .5em 0 0 0;
+margin-top: 1em;
+    clear: left;
+}
+DIV.pager A
+{
+font-size: 1.1em;
+color: #000;
+text-decoration: none;
+padding: 0 .4em 0 .4em;
+}
+DIV.pager A:hover
+{
+background-color: Silver;
+}
+DIV.pager A.selected
+{
+background-color: #353535;
+color: White;
+}
+
+DIV#categories A
+{
+font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block;
+text-decoration: none; padding: .6em; color: Black;
+border-bottom: 1px solid silver;
+}
+DIV#categories A.selected { background-color: white; color: #353535; }
+DIV#categories A:hover { background-color: lightgray; }
+DIV#categories A.selected:hover { background-color: white; }
+
+DIV#cart {     top: 50%;
+               float:right; color: black;
+background-color: white; padding: .5em .5em .5em 1em; }
+DIV#cart A { text-decoration: none; padding: .4em 1em .4em 1em; line-height:2.1em;
+margin-left: .5em; background-color: white; color:darkgrey; border: 1px solid black;}
+
+DIV#cartState {
+    z-index: 12000;
+    background: lightblue;
+    color: #353535;
+}

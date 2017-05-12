@@ -1,0 +1,12 @@
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\Domain.dll.config
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\Domain.dll
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\Domain.pdb
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\EntityFramework.dll
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\EntityFramework.xml
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\ru\EntityFramework.resources.dll
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\obj\Debug\Northwind.Domain.csprojResolveAssemblyReference.cache
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\obj\Debug\Domain.dll
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\obj\Debug\Domain.pdb
+D:\estashuk\csharp_projects\ASP.NET MVC\Northwind\Domain\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

@@ -1,0 +1,25 @@
+﻿@model Northwind.WebUI.Models.ProductsListViewModel
+
+@{
+    ViewBag.Title = "Products";
+}
+
+    @*<ul class="products">
+        @foreach (var p in Model.Products)
+        {
+            Html.RenderPartial("ProductSummary", p);
+        }
+    </ul>*@
+<div class="products">
+    @foreach (var p in Model.Products)
+    {
+        Html.RenderPartial("ProductSummary", p);
+    }
+</div>
+<div id="cartState" title="Shopping cart" class="table-responsive"></div>
+
+
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
+</div>
+
